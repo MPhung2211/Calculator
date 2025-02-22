@@ -35,6 +35,7 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtKetQua = new System.Windows.Forms.TextBox();
             this.Cong = new System.Windows.Forms.Button();
+            this.Tru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +47,6 @@
             this.label1.Size = new System.Drawing.Size(39, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số a";
-     
             // 
             // label2
             // 
@@ -57,7 +57,6 @@
             this.label2.Size = new System.Drawing.Size(39, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Số b";
-         
             // 
             // label3
             // 
@@ -95,19 +94,32 @@
             // 
             // Cong
             // 
-            this.Cong.Location = new System.Drawing.Point(50, 168);
+            this.Cong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cong.Location = new System.Drawing.Point(77, 168);
             this.Cong.Name = "Cong";
-            this.Cong.Size = new System.Drawing.Size(75, 23);
+            this.Cong.Size = new System.Drawing.Size(75, 32);
             this.Cong.TabIndex = 6;
             this.Cong.Text = "Cộng";
             this.Cong.UseVisualStyleBackColor = true;
             this.Cong.Click += new System.EventHandler(this.Cong_Click);
+            // 
+            // Tru
+            // 
+            this.Tru.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tru.Location = new System.Drawing.Point(203, 168);
+            this.Tru.Name = "Tru";
+            this.Tru.Size = new System.Drawing.Size(75, 32);
+            this.Tru.TabIndex = 7;
+            this.Tru.Text = "Trừ";
+            this.Tru.UseVisualStyleBackColor = true;
+            this.Tru.Click += new System.EventHandler(this.Tru_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 261);
+            this.Controls.Add(this.Tru);
             this.Controls.Add(this.Cong);
             this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.txtB);
@@ -131,6 +143,7 @@
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtKetQua;
         private System.Windows.Forms.Button Cong;
+        private System.Windows.Forms.Button Tru;
     }
 }
 

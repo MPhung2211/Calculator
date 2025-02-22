@@ -36,6 +36,7 @@
             this.txtKetQua = new System.Windows.Forms.TextBox();
             this.Cong = new System.Windows.Forms.Button();
             this.Tru = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -114,11 +115,22 @@
             this.Tru.UseVisualStyleBackColor = true;
             this.Tru.Click += new System.EventHandler(this.Tru_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(140, 216);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Hủy";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 261);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Tru);
             this.Controls.Add(this.Cong);
             this.Controls.Add(this.txtKetQua);
@@ -144,6 +156,7 @@
         private System.Windows.Forms.TextBox txtKetQua;
         private System.Windows.Forms.Button Cong;
         private System.Windows.Forms.Button Tru;
+        private System.Windows.Forms.Button button1;
     }
 }
 
